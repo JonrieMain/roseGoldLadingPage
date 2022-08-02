@@ -5,6 +5,10 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<title>Minimalistic RoseGold Landing Page</title>
 	<link rel="stylesheet" type="text/css" href="./css/index.css">
+
+	<!-- aos -->
+	<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
 </head>
 <body>
 
@@ -12,7 +16,7 @@
 	<div class="mainCon">
 		<i id="navTrig" class="fa-solid fa-bars"></i>
 		<!-- <i class="fa-solid fa-x"></i> -->
-		<header class="sideHeader close">
+		<header class="sideHeader close" data-aos="flip-left">
 			<img class="logo" src="./assets/logo.png">
 			<ul>
 				<a href="#">Restaurant</a>
@@ -64,4 +68,14 @@
 <script type="text/javascript" src="./js/index.js"></script>
 <!-- fontawesome -->
 <script src="https://kit.fontawesome.com/4f085de0b2.js" crossorigin="anonymous"></script>
+<!--  aos  -->
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script>
+  AOS.init();
+  AOS.init({
+  	once: true,
+  	startEvent: 'DOMContentLoaded',
+  	duration: 1400
+  });
+</script>
 </html>

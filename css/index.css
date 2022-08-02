@@ -114,6 +114,8 @@ body{
 /* home */
 .mainCon .home{
 	width: 100%;
+	opacity: 0;
+	transition: 1.1s linear;
 }
 
 
@@ -319,7 +321,6 @@ body{
 		background: url(../assets/homeBGLow.jpg)repeat center center/cover;
 		background-attachment: fixed;
 		height: 100%;
-		overflow: unset;
 	}
 	.mainCon .home{
 		background: none;

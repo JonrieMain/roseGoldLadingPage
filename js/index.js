@@ -1,5 +1,6 @@
 const sideHeader = document.querySelector('.sideHeader');
 const nav = document.querySelector('#navTrig');
+const home = document.querySelector('.home');
 nav.addEventListener('click', ()=>{
 	if(sideHeader.classList.contains('close')){
 
@@ -28,3 +29,6 @@ nav.addEventListener('click', ()=>{
 
 	}
 })
+
+
+window.addEventListener('load',()=>{home.style.opacity="1"})
