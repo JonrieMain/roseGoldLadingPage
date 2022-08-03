@@ -45,6 +45,7 @@ body{
 	align-items: center;
 	flex-direction: column;
 	padding: 50px .1rem;
+	transition: .3s linear;
 }
 .mainCon .sideHeader .logo{
 	height: 100%;
@@ -63,7 +64,6 @@ body{
 	text-align: center;
 }
 .mainCon .sideHeader ul a{
-	color: #fff;
 	text-decoration: none;
 	text-transform: uppercase;
 	color: #e2c7b8;
@@ -218,6 +218,42 @@ body{
 	min-width: 346px;
 	font-weight: 300;
 }
+
+
+
+
+
+/* under cons */
+.underCons{
+	height: 100vh;
+	min-height: 900px;
+	width: 100%;
+	background: #323139 url(../assets/underCons.jpg)no-repeat center center/contain;
+	display: flex;
+	justify-content: center;
+	padding: 3rem .4rem;
+}
+.underCons a{
+	color: #fff;
+	text-decoration: none;
+	font-size: 2rem;
+	transition: .3s;
+	word-break: break-word;
+	text-align: center;
+}
+.underCons a:hover{
+	color: #000;
+}
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -378,4 +414,14 @@ body{
 	min-width: unset;
 }
 
+}
+
+
+
+
+/* for under cons media */
+@media all and (max-width: 600px){
+	.mainCon .underCons{
+		background: none;
+	}
 }
