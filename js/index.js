@@ -1,6 +1,8 @@
 const sideHeader = document.querySelector('.sideHeader');
 const nav = document.querySelector('#navTrig');
 const home = document.querySelector('.home');
+const logo = document.querySelector('.logo').addEventListener('click',()=>{location.reload();})
+
 nav.addEventListener('click', ()=>{
 	if(sideHeader.classList.contains('close')){
 
